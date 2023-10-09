@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <a href="{% url 'clgstoreapp:login_view' %}" class="btn btn-primary">Login</a>
+</div>
+{% endblock %}

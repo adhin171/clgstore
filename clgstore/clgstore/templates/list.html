@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<style>
+    /* Center the content both vertically and horizontally */
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Use 100vh for full viewport height */
+        text-align: center; /* Center text horizontally */
+    }
+
+    /* Style the message */
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Style the link */
+    a {
+        text-decoration: none;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for the link */
+    a:hover {
+        background-color: #0056b3; /* Darker shade of blue on hover */
+    }
+</style>
+
+{% block body %}
+<div class="center-content">
+    <h3>Order confirmed</h3>
+    <a href="/">Click here to return back to the home page</a>
+</div>
+{% endblock %}
